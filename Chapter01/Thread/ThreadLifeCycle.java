@@ -95,7 +95,7 @@ public class ThreadLifeCycle {
          // BLOCKED
          System.out.println("t2 state: " + t2.getState());
 
-// 6. TERMINATED_THREAD
+// 6. TERMINATED_THREAD:TERMINATED means the thread has finished its execution and cannot be restarted.
 
 
      Thread t = new Thread(() -> {
