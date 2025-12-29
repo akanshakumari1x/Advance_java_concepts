@@ -13,11 +13,18 @@ class Buffer {
         hasValue = true;
         System.out.println("Produced: " + number);
 
-        notify(); // notify consumer
+        notify();
+        
+
+//        Producer produce first value, consumer consumes it waits for producer to produce again
+//         bcz it was never notified both threads go into waiting state forever.
     }
 
     // Consumer method
     public synchronized int consume() throws InterruptedException {
+//        while is used instead of if with wait() to re-check the condition
+//        after wakeup, protecting against spurious wakeups.
+
         while (!hasValue) {
             wait(); // wait until producer produces
         }
