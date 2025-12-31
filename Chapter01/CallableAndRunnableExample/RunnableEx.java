@@ -6,13 +6,16 @@ Key characteristics:-
 run() returns void
 Checked exceptions are not allowed
 Suitable for fire-and-forget tasks
-
+Runnable → "Do a task, don’t return anything."
+Runnable → when only execution matters
 */
 
 @FunctionalInterface
 public interface RunnableEx {
     void run();
 }
+
+
 
 
 
