@@ -42,8 +42,7 @@ public class Example1 {
                 .forEach(System.out::println);
 
         // 5. Find sum of number -Used for aggregation
-        int sum =
-                numbers.stream()
+        int sum =  numbers.stream()
                         .reduce(0, Integer::sum);
 
 
