@@ -26,11 +26,11 @@ Static methods in interfaces provide utility behavior related to the interface a
 
 ex- interface A {
 
-&nbsp;   static void show() {
+    static void show() {
 
-&nbsp;       System.out.println("A");
+        System.out.println("A");
 
-&nbsp;   }
+    }
 
 }
 
@@ -50,11 +50,11 @@ new A().show();   // compile-time error
 
 interface A {
 
-&nbsp;   static void show() {
+    static void show() {
 
-&nbsp;       System.out.println("A");
+        System.out.println("A");
 
-&nbsp;   }
+    }
 
 }
 
@@ -62,21 +62,27 @@ interface A {
 
 class Test implements A {
 
-&nbsp;   static void show() {   // ❌ Not overriding
+    static void show() {   // ❌ Not overriding
 
-&nbsp;       System.out.println("Test");
+        System.out.println("Test");
 
-&nbsp;   }
+    }
 
 }
 
-&nbsp;This is method hiding, not overriding.
+ This is method hiding, not overriding.
 
-&nbsp;JVM treats them as two unrelated methods.
+ JVM treats them as two unrelated methods.
 
 
 
 \##Static methods must have a body.Cannot Be Abstract or Default.
 
+\##Static Interface Methods Avoid Diamond Problem.
 
+Static interface methods are stored in the interface’s constant pool
+
+They are invoked using invokestatic
+
+Not part of vtable
 
