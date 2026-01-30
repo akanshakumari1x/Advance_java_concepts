@@ -1,0 +1,22 @@
+
+ArrayList is backed by a dynamic array and provides fast random access, while LinkedList uses a doubly linked list and provides faster insertions and deletions but slower access.
+
+ArrayList Example:-
+Think of ArrayList like a dynamic array.
+Best when you read data more than modifying.
+Example Scenario
+You are showing a list of products on a website.
+
+LinkedList Example:-
+Think of LinkedList like train coaches 
+Each coach connected to next.
+Best when you add/remove frequently
+
+
+| Feature              | ArrayList     | LinkedList         |
+| -------------------- | ------------- | ------------------ |
+| Data Structure       | Dynamic array | Doubly linked list |
+| Memory               | Continuous    | Nodes + pointers   |
+| Access time          | Fast (O(1))   | Slow (O(n))        |
+| Insert/Delete middle | Slow          | Fast               |
+| Memory usage         | Less          | More               |
