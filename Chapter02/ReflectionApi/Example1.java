@@ -25,7 +25,7 @@ public class Example1 {
 
 
     //calling method dynamically
-    
+
     Method m = u.getClass().getMethod("toString");
     Object result = m.invoke(u);
     System.out.println(result);
