@@ -20,3 +20,6 @@ Best when you add/remove frequently
 | Access time          | Fast (O(1))   | Slow (O(n))        |
 | Insert/Delete middle | Slow          | Fast               |
 | Memory usage         | Less          | More               |
+
+
+Built a Weather Forecast Web App using JavaScript and Web APIs to display real-time weather data based on city search or user location. Integrated a public weather API using Fetch API and handled asynchronous data with dynamic DOM updates. Implemented features like error handling, responsive UI, and JSON data parsing for a smooth user experience.
