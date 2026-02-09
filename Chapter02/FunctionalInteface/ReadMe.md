@@ -18,9 +18,9 @@ list.sort((a, b) -> a.getMarks() - b.getMarks());
 
 list.stream()
 
-&nbsp;   .filter(n -> n > 10)
+    .filter(n -> n > 10)
 
-&nbsp;   .forEach(System.out::println);
+    .forEach(System.out::println);
 
 
 
@@ -52,7 +52,7 @@ If there is more than one abstract method, Java has no way to decide which one t
 
 The compiler gets confused at compile time, not runtime.
 
-Check below Example :- 
+Check below Example :-
 
 
 
@@ -62,7 +62,7 @@ Check below Example :-
 
 interface Printer {
 
-&nbsp;   void print();
+    void print();
 
 }
 
@@ -80,9 +80,9 @@ Lambda → print().
 
 interface Printer {
 
-&nbsp;   void print();
+    void print();
 
-&nbsp;   void scan();
+    void scan();
 
 }
 
@@ -94,13 +94,19 @@ Compilation Error. bcz java has no clue is this lambda for print or for scan.
 
 
 
-Important point: It’s NOT about runtime execution
+Important point: It’s NOT about runtime execution.
 
 
 
+Master Rule:-
 
 
 
+“Method overloading is compile-time polymorphism.”
 
+“Method overriding is runtime polymorphism.”
 
+“Static methods are method hidden, not overridden.”
+
+“Variables do not support polymorphism in Java.”
 
