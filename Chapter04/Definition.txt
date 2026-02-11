@@ -1,0 +1,12 @@
+Association is a relationship between two separate classes through objects.
+ It represents "has-a" relationship.
+ Both classes are independent.
+ One class uses another class.
+Or,
+Association means one class contains a reference of another class.
+
+Real Life Example:-
+A Student studies in a College
+Student can exist without College (object-wise)
+College can exist without Student
+So this is Association.
