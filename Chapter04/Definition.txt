@@ -10,3 +10,19 @@ A Student studies in a College
 Student can exist without College (object-wise)
 College can exist without Student
 So this is Association.
+
+Types of Association.
+
+There are mainly 2 types:-
+1. Aggregation (Weak Association)
+Relationship is weak.
+Objects can exist independently.
+Ex- Employee → Department
+If department is deleted, employee can still exist.
+
+
+2.Composition (Strong Association)
+Strong relationship.
+If parent object is destroyed, child is also destroyed.
+Ex- House → Room
+If house is destroyed, rooms are also destroyed.
