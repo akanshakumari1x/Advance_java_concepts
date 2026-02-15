@@ -1,0 +1,32 @@
+What Are Design Patterns?
+
+Design Patterns are proven solutions to common software design problems.
+They are not ready-made code, but templates or blueprints that help you write clean, maintainable, and scalable code.
+
+Why Do We Need Design Patterns?
+When building applications (like your Spring Boot projects), problems repeat:
+How to create objects properly?
+How to reduce tight coupling?
+How to manage dependencies?
+How to make code flexible?
+Design patterns help solve these systematically.
+
+Types of Design Patterns:-
+Design patterns are mainly divided into 3 categories:
+
+1.Creational Patterns (Object Creation)
+2.Structural Patterns (Class/Object Structure)
+3.Behavioral Patterns (Object Communication)
+
+1.Creational Patterns (Object Creation) :- 
+These deal with how objects are created.
+
+Pattern  	 -  Purpose
+Singleton	 -  Only one object instance
+Factory	         -  Create object without exposing creation logic
+Abstract Factory  - Factory of factories
+Builder	          - Build complex objects step-by-step
+Prototype	-   Clone existing object.
+
+Example: Singleton Pattern.
+Used when only one instance should exist.             
