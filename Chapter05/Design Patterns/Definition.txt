@@ -28,5 +28,11 @@ Abstract Factory  - Factory of factories
 Builder	          - Build complex objects step-by-step
 Prototype	-   Clone existing object.
 
-Example: Singleton Pattern.
-Used when only one instance should exist.             
+1. Singleton Pattern.
+Only one instance of a class exists in the entire application.
+
+2.Factory Pattern.
+The Factory Design Pattern is a Creational Pattern used to create objects without exposing the object creation logic to the client.
+Instead of using new directly, we delegate object creation to a factory class
+Example - Payment System (Good for Your Banking Project)
+
