@@ -31,8 +31,8 @@ public class PaymentFactory {
         return null;
     }
 }
-//4. Client Code
 
+//4. Client Code
 public class Factory {
     public static void main(String[] args) {
         Payment payment = PaymentFactory.getPayment("upi");

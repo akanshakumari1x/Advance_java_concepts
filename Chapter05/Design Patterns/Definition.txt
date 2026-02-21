@@ -32,7 +32,18 @@ Prototype	-   Clone existing object.
 Only one instance of a class exists in the entire application.
 
 2.Factory Pattern.
+
 The Factory Design Pattern is a Creational Pattern used to create objects without exposing the object creation logic to the client.
 Instead of using new directly, we delegate object creation to a factory class
-Example - Payment System (Good for Your Banking Project)
+Example - Payment System (Good for Your Banking Project).
+
+Why Do We Need Factory?
+Payment payment = new CreditCardPayment();
+If tomorrow you change to UPI, you must modify the code everywhere.
+This creates tight coupling. Factory pattern solves this.
+
+The Spring Framework internally uses Factory pattern:
+ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+Spring uses BeanFactory internally to create objects.
+you never write:- new UserService();    Spring creates it for you.
 
