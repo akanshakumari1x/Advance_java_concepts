@@ -1,0 +1,32 @@
+Structural Design Patterns (Structure of Classes):-
+
+Structural patterns focus on how classes and objects are organized and connected to form larger structures.
+They help you: Reduce tight coupling, Improve flexibility, Reuse existing code, Integrate different systems.
+
+Types of Structural Patterns:-
+Pattern	    -  Purpose
+Adapter	       Connect incompatible interfaces
+Decorator	Add behavior dynamically
+Proxy	        Control access
+Facade	        Simplify complex system
+Composite	Tree structure
+Bridge	      Separate abstraction & implementation
+
+1. Adapter Pattern:-
+The Adapter Pattern allows two incompatible interfaces to work together.It acts like a bridge between two systems. or “Adapter pattern converts the interface of one class into another interface that the client expects.”
+Real life ex:- Mobile Charger.
+
+Example;-
+Imagine your banking system supports a new payment API.
+your system expects: 
+
+public interface PaymentProcessor {
+    void processPayment(double amount); }
+
+But third-party API gives:
+
+public class ThirdPartyPayment {
+    public void makePayment(double amount) {
+        System.out.println("Payment done via Third Party API: " + amount);
+    }  }
+ Problem: Method names are different → incompatible interfaces.

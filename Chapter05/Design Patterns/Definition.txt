@@ -38,6 +38,7 @@ Instead of using new directly, we delegate object creation to a factory class
 Example - Payment System (Good for Your Banking Project).
 
 Why Do We Need Factory?
+
 Payment payment = new CreditCardPayment();
 If tomorrow you change to UPI, you must modify the code everywhere.
 This creates tight coupling. Factory pattern solves this.
