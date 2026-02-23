@@ -1,0 +1,20 @@
+Behavioral Design Patterns:-
+
+Behavioral patterns focus on how objects communicate with each other.
+They define: How objects interact, How responsibility is distributed, How communication is handled.
+
+One of the most important behavioral patterns is:
+What is Observer Pattern?
+The Observer Pattern defines a one-to-many relationship between objects.
+When one object changes state, All its dependent objects (observers) are notified automatically.
+Or,
+"Observer pattern allows multiple objects to listen to changes in another object and get notified automatically."
+
+Real-Life Example:-
+YouTube Channel
+You subscribe to a channel.
+When a new video is uploaded,
+All subscribers receive notification.
+
+Here:
+Channel = Subject, Subscribers = Observers
