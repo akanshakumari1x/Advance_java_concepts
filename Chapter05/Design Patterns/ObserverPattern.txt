@@ -18,3 +18,25 @@ All subscribers receive notification.
 
 Here:
 Channel = Subject, Subscribers = Observers
+
+Real Example in Spring
+The Spring Framework uses Observer pattern in:
+Application Events
+
+@EventListener
+public void handleEvent(CustomEvent event) {
+    // react to event
+}
+Spring internally uses:
+Publisher (Subject)
+EventListener (Observer)
+
+Real Example in Your Banking System:-
+When a transaction happens:
+ Send Email, Send SMS, Update Audit Log, Notify Admin
+
+Instead of calling all manually, use Observer pattern.
+Transaction = Subject
+EmailService, SMSService, AuditService = Observers
+
+
