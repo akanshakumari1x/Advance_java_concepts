@@ -40,3 +40,15 @@ Transaction = Subject
 EmailService, SMSService, AuditService = Observers
 
 
+When To Use Observer Pattern?
+Use when:
+1. Multiple objects depend on one object
+2. You need automatic notification
+3. You want loose coupling
+4. Event-driven systems
+
+Avoid when:
+1. Too many observers (performance issue)
+2. Complex dependency chains
+
+
